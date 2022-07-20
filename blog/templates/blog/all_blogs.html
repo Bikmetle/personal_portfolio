@@ -1,3 +1,7 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
 All Blogs Are Here
 
 <h2>Marsel has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h2>
@@ -8,3 +12,5 @@ All Blogs Are Here
 <p>{{ blog.description|striptags|truncatechars:100 }}</p>
 
 {% endfor %}
+
+{% endblock %}

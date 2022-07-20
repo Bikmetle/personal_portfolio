@@ -1,3 +1,7 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
 <h1>My portfolio</h1>
 <a href="{% url 'blog:all_blogs' %}">Blog</a>
 {% load static %}
@@ -16,3 +20,5 @@
 {% endif %}
 
 {% endfor %}
+
+{% endblock %}
