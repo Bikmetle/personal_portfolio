@@ -1,10 +1,10 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-
-All Blogs Are Here
-
+<br>
+<br>
 <h2>Marsel has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h2>
+<br>
 {% for blog in blogs %}
 
 <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
